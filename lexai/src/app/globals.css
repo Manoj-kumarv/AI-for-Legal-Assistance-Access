@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f1117;
+  --foreground: #e8eaf0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1d27;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b3f52;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5b5f72;
+}
+
+/* Markdown result styling */
+.result-content h1,
+.result-content h2,
+.result-content h3 {
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #c7d2fe;
+}
+.result-content h1 { font-size: 1.3rem; }
+.result-content h2 { font-size: 1.15rem; }
+.result-content h3 { font-size: 1rem; }
+
+.result-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: #d1d5e8;
+}
+
+.result-content ul,
+.result-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.result-content li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+  color: #d1d5e8;
+}
+
+.result-content strong,
+.result-content b {
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.result-content blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 1rem;
+  margin: 0.75rem 0;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.result-content code {
+  background: #1e2130;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #86efac;
+}
+
+.result-content hr {
+  border-color: #2a2d3e;
+  margin: 1rem 0;
+}
