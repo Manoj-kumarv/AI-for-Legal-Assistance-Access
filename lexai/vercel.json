@@ -1,8 +1,5 @@
 {
   "framework": "nextjs",
   "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "env": {
-    "GEMINI_API_KEY": "@gemini-api-key"
-  }
+  "outputDirectory": ".next"
 }
